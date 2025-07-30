@@ -11990,7 +11990,7 @@ body {
 
 /* Menu */
 header {
-  background-color: #00796b;
+  background-color: #2E8B57;
   color: #fff;
   padding: 1em 2em;
 }
@@ -12084,4 +12084,10 @@ a img {
 a {
   text-decoration: none;
   color: #fff;
+}
+
+header {
+  background-color: #2E8B57;
+  margin: 0;
+  padding: 0;
 }/*# sourceMappingURL=main.css.map */
