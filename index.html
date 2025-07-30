@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>EcoRide - Accueil</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EcoRide - Accueil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+  <link rel="stylesheet" href="scss/main.css">
 </head>
 <body>
 
   <!-- MENU -->
-     <header>
-    <nav>
-      <div class="logo">EcoRide</div>
-      <ul>
-        <li><a href="/">Accueil</a></li>
-        <li><a href="#">Covoiturages</a></li>
-        <li><a href="#">Connexion</a></li>
-        <li><a href="#">Contact</a></li>
+     <header>
+     <nav>
+      <a class="logo" href="/">EcoRide</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="#">Covoiturages</a></li>
+        <li><a href="#">Connexion</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
    </nav>
   </header>
@@ -27,10 +30,12 @@
   </main>
 
   <!-- PIED DE PAGE -->
-  <footer>
-     <p>Contact : contact@ecoride.fr</p>
-    <a href="#">Mentions légales</a>
-  </footer>
+  <footer class="text-center footer">
+    <div class="row">
+      <p>Contact : contact@ecoride.fr</p>
+    <a href="#">Mentions légales</a> 
+    </div>
+     </footer>
     <script type="module" src="./Router/router.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
