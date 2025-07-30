@@ -11975,6 +11975,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12063,12 +12068,18 @@ nav ul li a {
 }
 
 /* Footer */
+main {
+  margin-bottom: 150px;
+}
+
 footer {
   background: #263238;
   color: white;
   text-align: center;
-  padding: 1em;
-  margin-top: 2em;
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 footer a {
