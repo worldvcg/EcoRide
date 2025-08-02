@@ -1,0 +1,38 @@
+
+<!-- PAGE CONTACT -->
+  <main class="justify-content-center align-items-center min-vh-50 ">
+   <div class="page-contact-background"> 
+    <div class="contact-img">
+      <img src="../image/Voiture-lectriquesurlarouteavecpaysagescossais.webp" alt="">
+    </div>
+    
+    <div class="contact-content text-white">
+       <div class="contact-wrapper">
+        <form class="contact-form">
+    <h2 class="text-center mb-4">Contactez-nous</h2>
+
+    <form action="traitement_contact.php" method="POST" class="row g-3 shadow p-4 bg-light rounded">
+      <div class="col-md-6">
+        <label for="nom" class="form-label">Nom</label>
+        <input type="text" class="form-control" id="nom" name="nom" required />
+      </div>
+
+      <div class="col-md-6">
+        <label for="email" class="form-label">Adresse e-mail</label>
+        <input type="email" class="form-control" id="email" name="email" required />
+      </div>
+
+      <div class="col-12">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+      </div>
+
+      <div class="col-12 text-center">
+        <button type="submit" class="btn-submit btn btn-success px-5">Envoyer</button>
+      </div>
+    </form>
+    </form>
+   </div>
+  </div>
+  </div>
+ </main>
