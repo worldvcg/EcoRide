@@ -1,32 +1,61 @@
-<div class="hero-scene text-center text-white">
-  <div class="hero-background">
-    <img src="../image/Voiture-lectriquesurlarouteavecpaysagescossais.webp" alt="Voiture électrique" />
-  </div>
+<section class="py-5 text-center">
+    <div class="container">
+      <h1 class="mb-4 text-black">Présentation de l'entreprise</h1>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <img
+            src="../image/Voiture-lectriquesurlarouteavecpaysagescossais.webp"
+            alt="Présentation de l'entreprise"
+            class="img-fluid rounded">
+        </div>
+        <div class="col-md-6 text-start">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Notre mission est de rendre le covoiturage simple et écologique.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  
-  <div class="hero-content">
-    <section class="presentation titre-italique">
-      <h1>Bienvenue sur EcoRide 🌱</h1>
-      <p>
-        EcoRide : covoiturez écolo, économisez, engagez-vous !
-      </p>
-    </section>
+  <!-- Recherche d'itinéraire -->
+   <section class="py-5 text-black text-center">
+    <div class="container">
+      <h2 class="mb-4">Rechercher un itinéraire</h2>
+      <form class="d-flex flex-wrap justify-content-center align-items-center gap-3">
+        
+          <input
+            type="text"
+            class="form-control"
+            name="departure"
+            placeholder="Ville de départ"
+            style="max-width: 250px;"
+            required>
+        
+        
+          <input
+            type="text"
+            class="form-control"
+            name="arrival"
+            placeholder="Ville d'arrivée"
+            style="max-width: 250px;"
+            required>
+       
+        
+          <input
+            type="date"
+            class="form-control"
+            name="date"
+            placeholder="jj/mm/aaaa"
+            style="max-width: 250px;"
+            required>
+        
+        
+          <button type="submit" class="btn btn-success w-100" style="max-width: 150px;">Rechercher</button>
+        
+      </form>
+    </div>
+  </section>
    
 
-    <section class="recherche">
-      <h2>Rechercher un itinéraire</h2>
-       <form>
-        <input type="text" placeholder="Ville de départ" required>
-        <input type="text" placeholder="Ville d'arrivée" required>
-        <input type="date" required>
-        <button type="submit">Rechercher</button>
-       </form>
-    </section>
-
-
-   
-</div>
-  </div>
  
 
 

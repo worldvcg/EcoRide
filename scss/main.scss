@@ -13,35 +13,79 @@ html{
 }
 
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background: #f4f4f4;
-  color: #000000;
+  font-family: 'poppins', sans-serif;
+  color: var(--dark);
+  background-color: var(--light);
+}
+
+h1, h2 {
+  color: var(--primary);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  width: 90%;
 }
 
 /* Menu */
-header {
-  $navbar-bg: transparent;
-  color: #fff;
-  padding: 1em 2em;
+.site-header {
+  background-color: var(--secondary);
+  color: var(--light);
+  
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
-.navbar a {
-  color: white !important;
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-list a {
+  color: var(--light);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+
+.presentation {
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.d-flex {
+    display: flex !important;
+    flex-direction: column;
+}
+
+.intro {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.intro img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
 }
 
 .navbar a:hover {
   color: rgba(7, 97, 15, 0.5) !important; /* jaune au survol */
 }
 
-.custom-navbar {
-  background-color: rgba(0, 0, 0, 0.5) !important;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 1050;
-}
+
 
 
 
@@ -52,11 +96,9 @@ body.menu-open {
 
 
 .hero-scene {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-  background-image: url(../image/Voiture-lectriquesurlarouteavecpaysagescossais.webp);
-  background-size: cover;
+  color :$secondary;
+  color :$light;
+  padding: 3rem 1rem;
 }
 
 .hero-background img {
@@ -80,6 +122,11 @@ body.menu-open {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+}
+
+.presentation h1 {
+  
+  margin-bottom: 1rem;
 }
 
 .presentation, .recherche {
