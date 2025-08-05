@@ -14,9 +14,14 @@ html{
 
 body {
   font-family: 'poppins', sans-serif;
-  color: var(--dark);
-  background-color: var(--light);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url('../image/depositphotos_746493440-stock-photo-abstract-brush-watercolor-border.jpg')!important;
 }
+
+
 
 h1, h2 {
   color: var(--primary);
@@ -36,7 +41,7 @@ h1, h2 {
 .site-header {
   background-color: var(--secondary);
   color: var(--light);
-  
+  background-color: rgba(34, 45, 60, 0.5);
 }
 
 .header-content {
@@ -61,7 +66,6 @@ h1, h2 {
 
 .presentation {
   padding: 40px;
-  background-color: #f9f9f9;
 }
 
 .d-flex {
@@ -206,18 +210,18 @@ main{
   margin-bottom: 100px;
 }
 footer {
-  background: #263238;
+  background-color: rgba(34, 45, 60, 0.5);
   color: white;
   text-align: center;
   padding: 15px;
   position:absolute;
   bottom: 0;
   width: 100%;
+  
 }
 
 footer a {
-  color: #80cbc4;
-  text-decoration: none;
+  color: $Info;
 }
 
 a img {
@@ -225,12 +229,11 @@ a img {
   border: none;
 }
 a {
-  text-decoration: none;
-  color: #fff;
+  color: $Success;
 }
 
 header {
-  background-color: $primary;
+  background-color: rgba(34, 45, 60, 0.5);
   margin: 0;
   padding: 0;
 }
@@ -265,14 +268,14 @@ p{
 
  .btn-submit {
   margin-top: 20px;
-  background-color: #02a549;
+  background-color: $primary;
  }
 
  .page-contact-background {
   position: relative;
   height: 100vh;
   overflow: hidden;
-  background-image: url(../image/Voiture-lectriquesurlarouteavecpaysagescossais.webp);
+ 
   background-size: cover;
   
 }
@@ -295,3 +298,4 @@ p{
     z-index: 1;
     filter: brightness(0.6);
 }
+

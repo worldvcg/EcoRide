@@ -31,7 +31,7 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #02a549;
-  --bs-secondary: rgba(108, 117, 125, 0.2);
+  --bs-secondary: #6C757D;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -47,7 +47,7 @@
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
   --bs-primary-text-emphasis: rgb(0.8, 66, 29.2);
-  --bs-secondary-text-emphasis: rgba(7.4482758621, 8.0689655172, 8.6206896552, 0.68);
+  --bs-secondary-text-emphasis: rgb(43.2, 46.8, 50);
   --bs-success-text-emphasis: rgb(10, 54, 33.6);
   --bs-info-text-emphasis: rgb(5.2, 80.8, 96);
   --bs-warning-text-emphasis: rgb(102, 77.2, 2.8);
@@ -55,7 +55,7 @@
   --bs-light-text-emphasis: #495057;
   --bs-dark-text-emphasis: #495057;
   --bs-primary-bg-subtle: rgb(204.4, 237, 218.6);
-  --bs-secondary-bg-subtle: rgba(251.027027027, 251.2702702703, 251.4864864865, 0.84);
+  --bs-secondary-bg-subtle: rgb(225.6, 227.4, 229);
   --bs-success-bg-subtle: rgb(209, 231, 220.8);
   --bs-info-bg-subtle: rgb(206.6, 244.4, 252);
   --bs-warning-bg-subtle: rgb(255, 242.6, 205.4);
@@ -63,7 +63,7 @@
   --bs-light-bg-subtle: rgb(251.5, 252, 252.5);
   --bs-dark-bg-subtle: #ced4da;
   --bs-primary-border-subtle: rgb(153.8, 219, 182.2);
-  --bs-secondary-border-subtle: rgba(244.8620689655, 245.4827586207, 246.0344827586, 0.68);
+  --bs-secondary-border-subtle: rgb(196.2, 199.8, 203);
   --bs-success-border-subtle: rgb(163, 207, 186.6);
   --bs-info-border-subtle: rgb(158.2, 233.8, 249);
   --bs-warning-border-subtle: rgb(255, 230.2, 155.8);
@@ -143,7 +143,7 @@
   --bs-tertiary-bg: rgb(42.5, 47.5, 52.5);
   --bs-tertiary-bg-rgb: 43, 48, 53;
   --bs-primary-text-emphasis: rgb(103.2, 201, 145.8);
-  --bs-secondary-text-emphasis: rgba(234, 235.2857142857, 236.4285714286, 0.52);
+  --bs-secondary-text-emphasis: rgb(166.8, 172.2, 177);
   --bs-success-text-emphasis: rgb(117, 183, 152.4);
   --bs-info-text-emphasis: rgb(109.8, 223.2, 246);
   --bs-warning-text-emphasis: rgb(255, 217.8, 106.2);
@@ -151,7 +151,7 @@
   --bs-light-text-emphasis: #f8f9fa;
   --bs-dark-text-emphasis: #dee2e6;
   --bs-primary-bg-subtle: rgb(0.4, 33, 14.6);
-  --bs-secondary-bg-subtle: rgba(2.9189189189, 3.1621621622, 3.3783783784, 0.84);
+  --bs-secondary-bg-subtle: rgb(21.6, 23.4, 25);
   --bs-success-bg-subtle: rgb(5, 27, 16.8);
   --bs-info-bg-subtle: rgb(2.6, 40.4, 48);
   --bs-warning-bg-subtle: rgb(51, 38.6, 1.4);
@@ -159,7 +159,7 @@
   --bs-light-bg-subtle: #343a40;
   --bs-dark-bg-subtle: #1a1d20;
   --bs-primary-border-subtle: rgb(1.2, 99, 43.8);
-  --bs-secondary-border-subtle: rgba(15.4285714286, 16.7142857143, 17.8571428571, 0.52);
+  --bs-secondary-border-subtle: rgb(64.8, 70.2, 75);
   --bs-success-border-subtle: rgb(15, 81, 50.4);
   --bs-info-border-subtle: rgb(7.8, 121.2, 144);
   --bs-warning-border-subtle: rgb(153, 115.8, 4.2);
@@ -1947,13 +1947,13 @@ progress {
 
 .table-secondary {
   --bs-table-color: #000;
-  --bs-table-bg: rgba(251.027027027, 251.2702702703, 251.4864864865, 0.84);
-  --bs-table-border-color: rgba(186.6041616838, 186.7849796699, 186.9457067687, 0.872);
-  --bs-table-striped-bg: rgba(234.0181864107, 234.2449482192, 234.4465142713, 0.848);
+  --bs-table-bg: rgb(225.6, 227.4, 229);
+  --bs-table-border-color: rgb(180.48, 181.92, 183.2);
+  --bs-table-striped-bg: rgb(214.32, 216.03, 217.55);
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: rgba(217.6335234317, 217.8444086288, 218.0318621374, 0.856);
+  --bs-table-active-bg: rgb(203.04, 204.66, 206.1);
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: rgba(225.75, 225.96875, 226.1631944444, 0.852);
+  --bs-table-hover-bg: rgb(208.68, 210.345, 211.825);
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -3026,19 +3026,19 @@ textarea.form-control-lg {
 
 .btn-secondary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: rgba(108, 117, 125, 0.2);
-  --bs-btn-border-color: rgba(108, 117, 125, 0.2);
+  --bs-btn-bg: #6C757D;
+  --bs-btn-border-color: #6C757D;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: rgba(41.7272727273, 45.2045454545, 48.2954545455, 0.32);
-  --bs-btn-hover-border-color: rgba(33.2307692308, 36, 38.4615384615, 0.36);
-  --bs-btn-focus-shadow-rgb: 198, 202, 205;
+  --bs-btn-hover-bg: rgb(91.8, 99.45, 106.25);
+  --bs-btn-hover-border-color: rgb(86.4, 93.6, 100);
+  --bs-btn-focus-shadow-rgb: 130, 138, 145;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: rgba(33.2307692308, 36, 38.4615384615, 0.36);
-  --bs-btn-active-border-color: rgba(27, 29.25, 31.25, 0.4);
+  --bs-btn-active-bg: rgb(86.4, 93.6, 100);
+  --bs-btn-active-border-color: rgb(81, 87.75, 93.75);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: rgba(108, 117, 125, 0.2);
-  --bs-btn-disabled-border-color: rgba(108, 117, 125, 0.2);
+  --bs-btn-disabled-bg: #6C757D;
+  --bs-btn-disabled-border-color: #6C757D;
 }
 
 .btn-success {
@@ -3161,19 +3161,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-secondary {
-  --bs-btn-color: rgba(108, 117, 125, 0.2);
-  --bs-btn-border-color: rgba(108, 117, 125, 0.2);
+  --bs-btn-color: #6C757D;
+  --bs-btn-border-color: #6C757D;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: rgba(108, 117, 125, 0.2);
-  --bs-btn-hover-border-color: rgba(108, 117, 125, 0.2);
+  --bs-btn-hover-bg: #6C757D;
+  --bs-btn-hover-border-color: #6C757D;
   --bs-btn-focus-shadow-rgb: 108, 117, 125;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: rgba(108, 117, 125, 0.2);
-  --bs-btn-active-border-color: rgba(108, 117, 125, 0.2);
+  --bs-btn-active-bg: #6C757D;
+  --bs-btn-active-border-color: #6C757D;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: rgba(108, 117, 125, 0.2);
+  --bs-btn-disabled-color: #6C757D;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: rgba(108, 117, 125, 0.2);
+  --bs-btn-disabled-border-color: #6C757D;
   --bs-gradient: none;
 }
 
@@ -6855,8 +6855,8 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(var(--bs-secondary-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: RGBA(33, 36, 38, var(--bs-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(33, 36, 38, var(--bs-link-underline-opacity, 1)) !important;
+  color: RGBA(86, 94, 100, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(86, 94, 100, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-success {
@@ -11988,8 +11988,11 @@ html {
 
 body {
   font-family: "poppins", sans-serif;
-  color: var(--dark);
-  background-color: var(--light);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url("../image/depositphotos_746493440-stock-photo-abstract-brush-watercolor-border.jpg") !important;
 }
 
 h1, .h1, h2, .h2 {
@@ -12010,6 +12013,7 @@ h1, .h1, h2, .h2 {
 .site-header {
   background-color: var(--secondary);
   color: var(--light);
+  background-color: rgba(34, 45, 60, 0.5);
 }
 
 .header-content {
@@ -12032,7 +12036,6 @@ h1, .h1, h2, .h2 {
 
 .presentation {
   padding: 40px;
-  background-color: #f9f9f9;
 }
 
 .d-flex {
@@ -12061,7 +12064,7 @@ body.menu-open {
 }
 
 .hero-scene {
-  color: rgba(108, 117, 125, 0.2);
+  color: #6C757D;
   color: #f8f9fa;
   padding: 3rem 1rem;
 }
@@ -12167,7 +12170,7 @@ main {
 }
 
 footer {
-  background: #263238;
+  background-color: rgba(34, 45, 60, 0.5);
   color: white;
   text-align: center;
   padding: 15px;
@@ -12177,8 +12180,7 @@ footer {
 }
 
 footer a {
-  color: #80cbc4;
-  text-decoration: none;
+  color: #0DCAF0;
 }
 
 a img {
@@ -12187,12 +12189,11 @@ a img {
 }
 
 a {
-  text-decoration: none;
-  color: #fff;
+  color: #198754;
 }
 
 header {
-  background-color: #02a549;
+  background-color: rgba(34, 45, 60, 0.5);
   margin: 0;
   padding: 0;
 }
@@ -12233,7 +12234,6 @@ p {
   position: relative;
   height: 100vh;
   overflow: hidden;
-  background-image: url(../image/Voiture-lectriquesurlarouteavecpaysagescossais.webp);
   background-size: cover;
 }
 
