@@ -21,7 +21,10 @@ body {
   background-image: url('../image/depositphotos_746493440-stock-photo-abstract-brush-watercolor-border.jpg')!important;
 }
 
-
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-hover-color: #fff;
+}
 
 h1, h2 {
   color: var(--primary);

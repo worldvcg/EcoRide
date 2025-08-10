@@ -1,20 +1,30 @@
-function adapterTexteEconomique() {
-  const texteElem = document.getElementById("texte-economique");
-  if (!texteElem) return;
+document.addEventListener('DOMContentLoaded', function () {
+  const roleButtons = document.querySelectorAll('.role-btn');
+  const sections = {
+    chauffeur: document.getElementById('section-chauffeur'),
+    passager: document.getElementById('section-passager'),
+    'les-deux': document.getElementById('section-les-deux')
+  };
 
-  const textePC = "jjj";
-  const texteMobile = "Voyagez moins cher en partageant les frais. EcoRide, c'est éco et écono ! 💸";
+  roleButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const selectedRole = button.getAttribute('data-role');
 
-  texteElem.textContent = window.innerWidth <= 768 ? texteMobile : textePC;
-}
+      // Toggle active button style
+      roleButtons.forEach(btn => btn.classList.remove('btn-light', 'active'));
+      button.classList.add('btn-light', 'active');
 
-// Appelle la fonction une fois que le contenu est chargé
-document.addEventListener("DOMContentLoaded", () => {
-  adapterTexteEconomique();
-  window.addEventListener("resize", adapterTexteEconomique);
-});
+      // Hide all sections
+      Object.values(sections).forEach(section => section.classList.add('d-none'));
 
-// Si tu utilises un routeur JS, tu peux aussi appeler adapterTexteEconomique()
-// juste après avoir injecté le contenu de home.html
+      // Show selected section
+      if (sections[selectedRole]) {
+        sections[selectedRole].classList.remove('d-none');
+      }
+    });
+  }); 
+}); 
+
+
 
 
