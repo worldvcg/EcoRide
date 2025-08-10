@@ -128,6 +128,29 @@ body.menu-open {
   padding: 2rem;
 }
 
+.hero {
+   background-image: url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 12px;
+    margin: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+}
+.hero .btn {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #2d7a46;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
 .presentation h1 {
   
   margin-bottom: 1rem;
@@ -269,7 +292,7 @@ p{
  .btn-submit {
   margin-top: 20px;
   background-color: $primary;
- }
+  }
 
  .page-contact-background {
   position: relative;
@@ -299,3 +322,127 @@ p{
     filter: brightness(0.6);
 }
 
+
+.btn-deconnexion {
+    background-color: #d9534f;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-deconnexion:hover {
+    background-color: #c9302c;
+}
+
+.font-formulaire{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Mini recherche */
+.search-section {
+     padding: 15px;
+    border-radius: 10px;
+    margin: 20px;
+}
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.search-form input, .search-form button {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+.search-form button {
+    background-color: #2d7a46;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Avantages */
+.features {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 40px 20px;
+}
+.feature {
+    padding: 20px;
+    border-radius: 12px;
+    width: 30%;
+}
+
+/* Trajets populaires */
+.popular {
+    margin: 40px 20px;
+    text-align: center;
+}
+.rides-list {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.ride-card {
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+}
+.ride-card .btn {
+    display: block;
+    background-color: #2d7a46;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+.how-it-works {
+    padding: 20px;
+    border-radius: 12px;
+    margin: 40px 20px;
+    text-align: center;
+}
+.steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.testimonials {
+    padding: 20px;
+    border-radius: 12px;
+    margin: 40px 20px;
+    text-align: center;
+}
+blockquote {
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.parent{
+  text-align: center;
+}
+
+.founded-home{
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+/* Pour mobile uniquement */
+@media (max-width: 768px) {
+
+
+}
+
+.row {
+  margin-right: 0;  
+  margin-left: 0;
+}

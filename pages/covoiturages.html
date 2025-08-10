@@ -3,7 +3,42 @@
     <section class="presentation titre-italique">
       <h1 class="text-center mb-4">Tous les trajets disponibles</h1>  
     </section>
-    
+   <!-- Formulaire de recherche -->
+<section class="search-section mb-4">
+   <form class="search-form row g-2 align-items-end">
+    <!-- Ville de départ -->
+    <div class="col-md-4 col-sm-12">
+      <label class="form-label">Départ</label>
+      <div class="input-group">
+        <span class="input-group-text bi bi-geo-alt-fill"></span>
+        <input type="text" class="form-control" placeholder="Ville de départ" required>
+      </div>
+    </div>
+    <!-- Ville d'arrivée -->
+    <div class="col-md-4 col-sm-12">
+      <label class="form-label">Arrivée</label>
+      <div class="input-group">
+        <span class="input-group-text bi bi-geo-alt-fill"></span>
+        <input type="text" class="form-control" placeholder="Ville d'arrivée" required>
+      </div>
+    </div>
+    <!-- Date -->
+    <div class="col-md-3 col-sm-8">
+      <label class="form-label">Date</label>
+      <div class="input-group">
+        <span class="input-group-text bi bi-calendar-date"></span>
+        <input type="date" class="form-control" required>
+      </div>
+    </div>
+    <!-- Bouton -->
+    <div class="col-md-1 col-sm-4">
+      <button type="submit" class="w-100 btn btn-primary bi bi-search"></button>
+    </div>
+  </div>
+</form>
+</section>
+  
+
     <!-- Filtres -->
     <div class="filters row">
       <div class="col-md-3">

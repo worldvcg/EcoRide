@@ -1,0 +1,103 @@
+<main>
+<div class="hero-content">
+    <section class="presentation titre-italique">
+      <h1 class="text-center mb-4">Mon Espace</h1>  
+    </section>
+    
+    <section class="mon-espace">
+   <div class="mb-3">
+    <label class="form-label">Rôle</label>
+    <div class="btn-group w-100" role="group">
+      <button class="btn btn-light role-btn" data-role="chauffeur">Chauffeur</button>
+      <button class="btn btn-primary role-btn" data-role="Passager">Passager</button>
+      <button class="btn btn-primary role-btn" data-role="les-deux">Les deux</button>
+    </div>
+  </div>
+
+ <div id="section-chauffeur" class="form-section">
+
+  <h5 class="mt-4">Information Véhicule</h5>
+
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label class="form-label">Plaque d'immatriculation</label>
+      <input type="text" class="form-control" placeholder="AB-123-CD">
+    </div>
+    <div class="col-md-6 mb-3">
+      <label class="form-label">Date du 1er immatriculation</label>
+      <input type="date" class="form-control">
+    </div>
+    <div class="col-md-6 mb-3">
+      <label class="form-label">Marque du véhicule</label>
+      <input type="text" class="form-control">
+    </div>
+    <div class="col-md-6 mb-3">
+      <label class="form-label">Modèle</label>
+      <input type="text" class="form-control">
+    </div>
+    <div class="col-md-6 mb-3">
+      <label class="form-label">Couleur</label>
+      <input type="text" class="form-control">
+    </div>
+    <div class="col-md-6 mb-3">
+      <label class="form-label">Nombre de places dispos</label>
+      <input type="number" class="form-control" min="1" max="8">
+    </div>
+  </div>
+
+  <h5 class="mt-4">Préférences conducteur</h5>
+
+  <div class="mb-3">
+    <label class="form-label d-block">Acceptez-vous les fumeurs ?</label>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="fumeurs" id="fumeursOui" value="oui">
+      <label class="form-check-label" for="fumeursOui">Oui</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="fumeurs" id="fumeursNon" value="non">
+      <label class="form-check-label" for="fumeursNon">Non</label>
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label d-block">Acceptez-vous les animaux ?</label>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="animaux" id="animauxOui" value="oui">
+      <label class="form-check-label" for="animauxOui">Oui</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="animaux" id="animauxNon" value="non">
+      <label class="form-check-label" for="animauxNon">Non</label>
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Autres préférences</label>
+    <textarea class="form-control" rows="4"></textarea>
+  </div>
+
+  <div class="text-center">
+    <button class="btn btn-primary">Enregistrer mes modifications</button>
+  </div>
+</div>
+  
+
+<div class="text-center mt-3">
+    <a href="#" class="text-successe">historique des covoiturages</a>
+  </div>
+</section>
+</div>
+
+<div class="text-center mt-3">
+<button id="signout-btn" class="btn-deconnexion">
+    Déconnexion
+</button>
+</div>
+
+<div id="autre-form" class="role-form d-none">
+    <p>Formulaire passager ou les deux (contenu à compléter).</p>
+  </div>
+
+ 
+  </div>
+  <script src="../js/pages.js/mon-espace.js" defer></script>
