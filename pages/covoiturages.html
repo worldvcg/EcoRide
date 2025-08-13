@@ -3,251 +3,87 @@
     <section class="presentation titre-italique">
       <h1 class="text-center mb-4">Tous les trajets disponibles</h1>  
     </section>
-   <!-- Formulaire de recherche -->
-<section class="search-section mb-4">
-   <form class="search-form row g-2 align-items-end">
-    <!-- Ville de départ -->
-    <div class="col-md-4 col-sm-12">
-      <label class="form-label">Départ</label>
+ 
+    <!-- Titre -->
+<div class="hero-content">
+  <section class="presentation titre-italique">
+    <h1 class="text-center mb-4">Tous les trajets disponibles</h1>  
+  </section>
+
+  <!-- Formulaire de recherche -->
+  <form id="rechercheForm" class="search-form row g-3 mb-4 align-items-end">
+    <div class="col-md-4">
+      <label for="inputDepart" class="form-label">Départ</label>
       <div class="input-group">
         <span class="input-group-text bi bi-geo-alt-fill"></span>
-        <input type="text" class="form-control" placeholder="Ville de départ" required>
+        <input id="inputDepart" type="text" class="form-control" placeholder="Ville de départ" required>
       </div>
     </div>
-    <!-- Ville d'arrivée -->
-    <div class="col-md-4 col-sm-12">
-      <label class="form-label">Arrivée</label>
+    <div class="col-md-4">
+      <label for="inputArrivee" class="form-label">Arrivée</label>
       <div class="input-group">
         <span class="input-group-text bi bi-geo-alt-fill"></span>
-        <input type="text" class="form-control" placeholder="Ville d'arrivée" required>
+        <input id="inputArrivee" type="text" class="form-control" placeholder="Ville d'arrivée" required>
       </div>
     </div>
-    <!-- Date -->
-    <div class="col-md-3 col-sm-8">
-      <label class="form-label">Date</label>
+    <div class="col-md-3">
+      <label for="inputDate" class="form-label">Date</label>
       <div class="input-group">
         <span class="input-group-text bi bi-calendar-date"></span>
-        <input type="date" class="form-control" required>
+        <input id="inputDate" type="date" class="form-control" required>
       </div>
     </div>
-    <!-- Bouton -->
-    <div class="col-md-1 col-sm-4">
+    <div class="col-md-1">
       <button type="submit" class="w-100 btn btn-primary bi bi-search"></button>
     </div>
-  </div>
-</form>
-</section>
-  
+  </form>
 
-    <!-- Filtres -->
-    <div class="filters row">
-      <div class="col-md-3">
-        <label>Prix max (€)</label>
-        <input type="number" class="form-control" placeholder="Ex: 20">
-      </div>
-      <div class="col-md-3">
-        <label>Durée max (min)</label>
-        <input type="number" class="form-control" placeholder="Ex: 90">
-      </div>
-      <div class="col-md-3">
-        <label>Note minimale</label>
-        <select class="form-select">
-          <option value="">-- Choisir --</option>
-          <option>★☆☆☆☆</option>
-          <option>★★☆☆☆</option>
-          <option>★★★☆☆</option>
-          <option>★★★★☆</option>
-          <option>★★★★★</option>
-        </select>
-      </div>
-      <div class="col-md-3">
-        <label>Écologique uniquement</label>
-        <select class="form-select">
-          <option value="">Tous</option>
-          <option value="oui">Oui</option>
-          <option value="non">Non</option>
-        </select>
-      </div>
+  <!-- Filtres -->
+  <div id="filtreForm" class="filters row g-3 mb-4">
+    <div class="col-md-3">
+      <label for="filtrePrix" class="form-label">Prix max (€)</label>
+      <input id="filtrePrix" type="number" min="1" class="form-control" placeholder="Ex: 20">
     </div>
-
-    <!-- Trajets -->
-    <div class="row mt-4">
-      <!-- Exemple trajet -->
-      <div class="col-md-6 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Bayonne ➡️ Pau</h5>
-            <p class="card-text">
-              🚗 Conducteur : Jean Dupont<br>
-              🪑 Places dispo : 2<br>
-              💶 Prix : 8€<br>
-              ⏱️ Durée : 1h30<br>
-              🌿 Écologique : Oui
-            </p>
-            <a href="trajetdetail" class="btn btn-primary">Voir le trajet</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Autre trajet -->
-      <div class="col-md-6 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Biarritz ➡️ Bordeaux</h5>
-            <p class="card-text">
-              🚗 Conducteur : Clara Martin<br>
-              🪑 Places dispo : 3<br>
-              💶 Prix : 15€<br>
-              ⏱️ Durée : 2h15<br>
-              🌿 Écologique : Non
-            </p>
-            <a href="trajet-detail.html" class="btn btn-primary">Voir le trajet</a>
-          </div>
-        </div>
-      </div>
-      <!-- Autre trajet -->
-      <div class="col-md-6 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Biarritz ➡️ Bordeaux</h5>
-            <p class="card-text">
-              🚗 Conducteur : Clara Martin<br>
-              🪑 Places dispo : 3<br>
-              💶 Prix : 15€<br>
-              ⏱️ Durée : 2h15<br>
-              🌿 Écologique : Non
-            </p>
-            <a href="trajet-detail.html" class="btn btn-primary">Voir le trajet</a>
-          </div>
-        </div>
-      </div>
-      <!-- Autre trajet -->
-      <div class="col-md-6 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Biarritz ➡️ Bordeaux</h5>
-            <p class="card-text">
-              🚗 Conducteur : Clara Martin<br>
-              🪑 Places dispo : 3<br>
-              💶 Prix : 15€<br>
-              ⏱️ Durée : 2h15<br>
-              🌿 Écologique : Non
-            </p>
-            <a href="trajet-detail.html" class="btn btn-primary">Voir le trajet</a>
-          </div>
-        </div>
-      </div>
-      <!-- Autre trajet -->
-      <div class="col-md-6 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Biarritz ➡️ Bordeaux</h5>
-            <p class="card-text">
-              🚗 Conducteur : Clara Martin<br>
-              🪑 Places dispo : 3<br>
-              💶 Prix : 15€<br>
-              ⏱️ Durée : 2h15<br>
-              🌿 Écologique : Non
-            </p>
-            <a href="trajet-detail.html" class="btn btn-primary">Voir le trajet</a>
-          </div>
-        </div>
-      </div>
-      <!-- Autre trajet -->
-      <div class="col-md-6 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Biarritz ➡️ Bordeaux</h5>
-            <p class="card-text">
-              🚗 Conducteur : Clara Martin<br>
-              🪑 Places dispo : 3<br>
-              💶 Prix : 15€<br>
-              ⏱️ Durée : 2h15<br>
-              🌿 Écologique : Non
-            </p>
-            <a href="trajet-detail.html" class="btn btn-primary">Voir le trajet</a>
-          </div>
-        </div>
-      </div>
-      <!-- Autre trajet -->
-      <div class="col-md-6 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Biarritz ➡️ Bordeaux</h5>
-            <p class="card-text">
-              🚗 Conducteur : Clara Martin<br>
-              🪑 Places dispo : 3<br>
-              💶 Prix : 15€<br>
-              ⏱️ Durée : 2h15<br>
-              🌿 Écologique : Non
-            </p>
-            <a href="trajet-detail.html" class="btn btn-primary">Voir le trajet</a>
-          </div>
-        </div>
-      </div>
-      <!-- Autre trajet -->
-      <div class="col-md-6 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Biarritz ➡️ Bordeaux</h5>
-            <p class="card-text">
-              🚗 Conducteur : Clara Martin<br>
-              🪑 Places dispo : 3<br>
-              💶 Prix : 15€<br>
-              ⏱️ Durée : 2h15<br>
-              🌿 Écologique : Non
-            </p>
-            <a href="trajet-detail.html" class="btn btn-primary">Voir le trajet</a>
-          </div>
-        </div>
-      </div>
-      <!-- Autre trajet -->
-      <div class="col-md-6 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Biarritz ➡️ Bordeaux</h5>
-            <p class="card-text">
-              🚗 Conducteur : Clara Martin<br>
-              🪑 Places dispo : 3<br>
-              💶 Prix : 15€<br>
-              ⏱️ Durée : 2h15<br>
-              🌿 Écologique : Non
-            </p>
-            <a href="trajet-detail.html" class="btn btn-primary">Voir le trajet</a>
-          </div>
-        </div>
-      </div>
-      <!-- Autre trajet -->
-      <div class="col-md-6 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Biarritz ➡️ Bordeaux</h5>
-            <p class="card-text">
-              🚗 Conducteur : Clara Martin<br>
-              🪑 Places dispo : 3<br>
-              💶 Prix : 15€<br>
-              ⏱️ Durée : 2h15<br>
-              🌿 Écologique : Non
-            </p>
-            <a href="trajet-detail.html" class="btn btn-primary">Voir le trajet</a>
-          </div>
-        </div>
-      </div>
-      <!-- Autre trajet -->
-      <div class="col-md-6 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Biarritz ➡️ Bordeaux</h5>
-            <p class="card-text">
-              🚗 Conducteur : Clara Martin<br>
-              🪑 Places dispo : 3<br>
-              💶 Prix : 15€<br>
-              ⏱️ Durée : 2h15<br>
-              🌿 Écologique : Non
-            </p>
-            <a href="trajet-detail.html" class="btn btn-primary">Voir le trajet</a>
-          </div>
-        </div>
-      </div>
+    <div class="col-md-3">
+      <label for="filtreDuree" class="form-label">Durée max (min)</label>
+      <input id="filtreDuree" type="number" min="1" class="form-control" placeholder="Ex: 90">
+    </div>
+    <div class="col-md-3">
+      <label for="filtreNote" class="form-label">Note minimale</label>
+      <select id="filtreNote" class="form-select">
+        <option value="">-- Choisir --</option>
+        <option value="1">★☆☆☆☆</option>
+        <option value="2">★★☆☆☆</option>
+        <option value="3">★★★☆☆</option>
+        <option value="4">★★★★☆</option>
+        <option value="5">★★★★★</option>
+      </select>
+    </div>
+    <div class="col-md-3">
+      <label for="filtreEco" class="form-label">Écologique uniquement</label>
+      <select id="filtreEco" class="form-select">
+        <option value="">Tous</option>
+        <option value="oui">Oui</option>
+        <option value="non">Non</option>
+      </select>
     </div>
   </div>
+
+  <!-- Recommandations -->
+  <section class="mb-5">
+    <h4>⭐ Mieux notés</h4>
+    <div class="row" id="recommendNote"></div>
+
+    <h4>💸 Moins chers</h4>
+    <div class="row" id="recommendCheap"></div>
+
+    <h4>🌱 Écologiques</h4>
+    <div class="row" id="recommendEco"></div>
+  </section>
+
+  <!-- Résultats des trajets -->
+  <section class="mt-4">
+    <h4>🔍 Résultats de recherche</h4>
+    <div class="row" id="resultatsTrajets"></div>
+  </section>
+</div>

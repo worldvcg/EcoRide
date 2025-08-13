@@ -24,6 +24,7 @@ body {
 .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: rgb(10, 124, 59);
 }
 
 h1, h2 {
@@ -449,3 +450,17 @@ blockquote {
   margin-right: 0;  
   margin-left: 0;
 }
+
+.role-btn.active {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.text-bg-primary {
+  color: #fff !important;
+}  

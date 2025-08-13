@@ -1,7 +1,7 @@
 const textes = {
   "texte-economique": {
     pc: "EcoRide, ce n’est pas seulement se déplacer, c’est aussi rencontrer de nouvelles personnes. Chaque trajet est une opportunité d’échanger, de partager des histoires, ou même de créer de nouvelles amitiés. Le covoiturage rapproche les gens et transforme vos voyages en moments agréables. Avec nous, la route devient un espace de convivialité et de bonne humeur.",
-    mobile: "Voyagez moins cher en partageant les frais. EcoRide, c'est éco et écono ! 💸"
+    mobile: "Voyagez moins cher en partageant les frais! 💸"
   },
   "texte-ecologique": {
     pc: "Voyager avec EcoRide, c’est contribuer directement à la réduction des émissions de CO₂. En partageant vos trajets avec d’autres voyageurs, vous diminuez le nombre de voitures sur les routes, réduisez la pollution de l’air et participez à la protection de notre planète. Chaque kilomètre partagé est un geste concret pour un avenir plus vert. Ensemble, faisons du covoiturage un moteur de changement écologique.",

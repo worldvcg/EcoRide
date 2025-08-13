@@ -1,114 +1,177 @@
-<div class="hero-content">
-    <section class="presentation titre-italique">
-      <h1 class="text-center mb-4">Mon Espace</h1>  
-    </section>
-    
-    <section class="mon-espace">
-   <div class="mb-3">
-    <label class="form-label">Rôle</label>
-    <div class="btn-group w-100" role="group">
-      <button class="btn btn-light role-btn" data-role="chauffeur">Chauffeur</button>
-      <button class="btn btn-primary role-btn" data-role="Passager">Passager</button>
-      <button class="btn btn-primary role-btn" data-role="les-deux">Les deux</button>
-    </div>
-  </div>
+<head>
+  <meta charset="utf-8" />
+  <title>Mon espace</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
 
- <div id="section-chauffeur" class="form-section">
-
-  <h5 class="mt-4">Information Véhicule</h5>
-
-  <div class="row">
-    <div class="col-md-6 mb-3">
-      <label class="form-label">Plaque d'immatriculation</label>
-      <input type="text" class="form-control" placeholder="AB-123-CD">
-    </div>
-    <div class="col-md-6 mb-3">
-      <label class="form-label">Date du 1er immatriculation</label>
-      <input type="date" class="form-control">
-    </div>
-    <div class="col-md-6 mb-3">
-      <label class="form-label">Marque du véhicule</label>
-      <input type="text" class="form-control">
-    </div>
-    <div class="col-md-6 mb-3">
-      <label class="form-label">Modèle</label>
-      <input type="text" class="form-control">
-    </div>
-    <div class="col-md-6 mb-3">
-      <label class="form-label">Couleur</label>
-      <input type="text" class="form-control">
-    </div>
-    <div class="col-md-6 mb-3">
-      <label class="form-label">Nombre de places dispos</label>
-      <input type="number" class="form-control" min="1" max="8">
-    </div>
-  </div>
-
-  <h5 class="mt-4">Préférences conducteur</h5>
-
-  <div class="mb-3">
-    <label class="form-label d-block">Acceptez-vous les fumeurs ?</label>
-    <div class="form-check form-check-inline">
-      <input class="form-check-input" type="radio" name="fumeurs" id="fumeursOui" value="oui">
-      <label class="form-check-label" for="fumeursOui">Oui</label>
-    </div>
-    <div class="form-check form-check-inline">
-      <input class="form-check-input" type="radio" name="fumeurs" id="fumeursNon" value="non">
-      <label class="form-check-label" for="fumeursNon">Non</label>
-    </div>
-  </div>
-
-  <div class="mb-3">
-    <label class="form-label d-block">Acceptez-vous les animaux ?</label>
-    <div class="form-check form-check-inline">
-      <input class="form-check-input" type="radio" name="animaux" id="animauxOui" value="oui">
-      <label class="form-check-label" for="animauxOui">Oui</label>
-    </div>
-    <div class="form-check form-check-inline">
-      <input class="form-check-input" type="radio" name="animaux" id="animauxNon" value="non">
-      <label class="form-check-label" for="animauxNon">Non</label>
-    </div>
-  </div>
-
-  <div class="mb-3">
-    <label class="form-label">Autres préférences</label>
-    <textarea class="form-control" rows="4"></textarea>
-  </div>
-
-  <div class="text-center">
-    <button class="btn btn-primary">Enregistrer mes modifications</button>
-  </div>
-</div>
   
+   <main class="container py-4">
+    <h1 class="text-center">Mon espace</h1>
+    <p id="info-role" class="text-muted"></p>
 
-<div class="text-center mt-3">
-    <a href="#" class="text-successe">historique des covoiturages</a>
+    <!-- Choix des rôles -->
+    <div class="mb-3 row g-3">
+     <div class="col-12 col-md-6"> 
+      <button class="btn btn-secondary role-btn w-100" data-role="passager">Passager</button>
+     </div>
+     <div class="col-12 col-md-6"> 
+      <button class="btn btn-secondary role-btn w-100" data-role="chauffeur">Chauffeur</button>
+     </div> 
+    </div>
+
+    <!-- Section PASSAGER -->
+    <section id="section-passager" class="form-section">
+      <h2 class="h5">Espace Passager</h2>
+      <div class="card mb-3">
+       <div class="card-body d-flex justify-content-between align-items-center p-3">
+  <div class="text-center">
+    <div class="fw-bold fs-5 mb-2">Mes crédits</div>
+    <span id="credits-passager" class="badge text-black bg-info fs-6 px-3 py-2">50</span>
   </div>
-</section>
-
-<div id="section-passager" class="form-section d-none">
-  <p>Formulaire passager (à compléter).</p>
+  <a href="/covoiturages" class="btn btn-primary m-3 align-items-center shadow-sm">
+    Rechercher un trajet
+  </a>
 </div>
-
-<div id="section-les-deux" class="form-section d-none">
-  <p>Formulaire combiné chauffeur + passager (à compléter).</p>
-</div>
-
-</div>
-
-
-
-
-<div class="text-center mt-3">
-<button id="signout-btn" class="btn-deconnexion">
-    Déconnexion
-</button>
-</div>
-
-<div id="autre-form" class="role-form d-none">
-    <p>Formulaire passager ou les deux (contenu à compléter).</p>
   </div>
 
- 
-  </div>
- 
+      <h3 class="h6">Mes réservations</h3>
+      <ul id="liste-reservations" class="list-group small"></ul>
+    </section>
+
+    <!-- Section CHAUFFEUR -->
+    <section id="section-chauffeur" class="form-section d-none">
+      <h2 class="h5">Espace Chauffeur</h2>
+
+      <!-- Préférences chauffeur -->
+      <div class="card mb-3">
+        <div class="card-header">Mes préférences</div>
+        <div class="card-body">
+          <form id="form-prefs" class="row g-3">
+            <div class="col-md-3">
+              <label class="form-label">Fumeur</label>
+              <select id="pref-fumeur" class="form-select">
+                <option value="non">Non</option>
+                <option value="oui">Oui</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label class="form-label">Animaux</label>
+              <select id="pref-animal" class="form-select">
+                <option value="non">Non</option>
+                <option value="oui">Oui</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Préférences personnalisées</label>
+              <div class="d-flex gap-2">
+                <input id="pref-custom-input" class="form-control" placeholder="Ex: Musique douce" />
+                <button class="btn btn-primary" id="add-pref-custom" type="button">Ajouter</button>
+              </div>
+              <div id="pref-custom-list" class="mt-2 d-flex flex-wrap gap-2"></div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Enregistrer mes préférences</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Gestion véhicules -->
+      <div class="card mb-3">
+        <div class="card-header">Mes véhicules</div>
+        <div class="card-body">
+          <form id="form-vehicule" class="row g-3">
+            <div class="col-md-3">
+              <label class="form-label">Immatriculation</label>
+              <input id="v-immat" class="form-control" required />
+            </div>
+            <div class="col-md-3">
+              <label class="form-label">1ère immatriculation</label>
+              <input id="v-firstdate" type="date" class="form-control" required />
+            </div>
+            <div class="col-md-2">
+              <label class="form-label">Marque</label>
+              <input id="v-marque" class="form-control" required />
+            </div>
+            <div class="col-md-2">
+              <label class="form-label">Modèle</label>
+              <input id="v-modele" class="form-control" required />
+            </div>
+            <div class="col-md-2">
+              <label class="form-label">Couleur</label>
+              <input id="v-couleur" class="form-control" />
+            </div>
+            <div class="col-md-3">
+              <label class="form-label">Énergie</label>
+              <select id="v-energie" class="form-select" required>
+                <option value="electrique">Électrique</option>
+                <option value="hybride">Hybride</option>
+                <option value="essence">Essence</option>
+                <option value="diesel">Diesel</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Ajouter le véhicule</button>
+            </div>
+          </form>
+
+          <ul id="liste-vehicules" class="list-group list-group-flush mt-3"></ul>
+        </div>
+      </div>
+
+      <!-- Saisir un voyage -->
+      <div class="card mb-3">
+        <div class="card-header">Créer un trajet</div>
+        <div class="card-body">
+          <form id="form-trajet" class="row g-3">
+            <div class="col-md-3">
+              <label class="form-label">Départ (ville)</label>
+              <input id="t-depart" class="form-control" required />
+            </div>
+            <div class="col-md-3">
+              <label class="form-label">Arrivée (ville)</label>
+              <input id="t-arrivee" class="form-control" required />
+            </div>
+            <div class="col-md-3">
+              <label class="form-label">Date/heure départ</label>
+              <input id="t-date" type="datetime-local" class="form-control" required />
+            </div>
+            <div class="col-md-3">
+              <label class="form-label">Places</label>
+              <input id="t-places" type="number" min="1" class="form-control" required />
+            </div>
+            <div class="col-md-3">
+              <label class="form-label">Prix (crédits)</label>
+              <input id="t-prix" type="number" min="1" class="form-control" required />
+              <div class="form-text">2 crédits sont prélevés par la plateforme</div>
+            </div>
+            <div class="col-md-4">
+              <label class="form-label">Véhicule</label>
+              <select id="t-vehicule" class="form-select" required></select>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Publier le trajet</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Mes trajets -->
+      <div class="card">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <span>Mes trajets</span>
+          <span class="small text-muted">Programmés, en cours, terminés</span>
+        </div>
+        <div class="card-body">
+          <ul id="liste-trajets" class="list-group"></ul>
+        </div>
+      </div>
+      </section>
+   <!--btn Deconnexion-->
+      <div class="m-3 text-center">
+        <button id="signout-btn" class="btn btn-danger">Déconnexion</button>
+      </div>
+  </main>
+
+  <script src="/js/mon-espace.js" defer></script>
+
